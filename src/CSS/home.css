@@ -1,0 +1,317 @@
+/* General layout and styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.landing-page {
+  padding: 2rem;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add space between items */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 80px;
+}
+
+.hero p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem;
+}
+
+.content-area h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.add-button-container {
+  position: relative;
+}
+
+.add-button {
+  background-color: #D33852;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 90px;
+}
+
+.add-button:hover {
+  background-color: #a92642;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 200px;
+  margin-right: 90px;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+  background-color: #ddd;
+}
+
+.button-container {
+  display: grid;
+}
+
+/* Course list and item styles */
+.new-section {
+  background-color: #ffffff;
+  padding: 3rem;
+  margin-top: 3rem;
+  border-radius: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
+          
+  justify-content: center; 
+  align-items: center;     
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.course-item {
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.course-item h3 {
+  display: inline-block; 
+  font-family: 'Arial', sans-serif; 
+  border: 2px solid #080808; 
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5rem; 
+}
+
+.course-item p {
+  margin: 5px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.course-item .button-group button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.course-link,
+.course-pdf {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.course-link a,
+.course-pdf p {
+  margin-left: 10px;
+  word-break: break-all;
+}
+
+.course-link a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.link-icon {
+  width: 20px; 
+  height: 20px; 
+}
+.resource-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+.course-link a:hover {
+  color: #23527c;
+}
+
+.course-resources {
+  margin-top: 10px;
+}
+
+.course-resource {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  background-color: #f1eeee; /* Light gray background for each resource */
+  cursor: pointer; /* Make each resource clickable */
+}
+
+.course-resource .resource-name {
+  margin-left: 8px;
+  font-weight: bold; /* Make resource name bold */
+  font-size: 15px;
+}
+
+.resource-actions {
+  margin-left: auto; /* Push actions to the right */
+  display: flex;
+  align-items: center; /* Align buttons vertically */
+}
+
+.resource-actions button {
+  background-color: transparent;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  color: #333; /* Dark gray color for icons */
+}
+
+.resource-actions button:hover {
+  opacity: 0.7; /* Dim the color on hover */
+}
+
+.hero {
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add space between items */
+}
+
+/* Resource and URL heading styles */
+.course-item h4 {
+  font-family: 'Courier New', Courier, monospace; /* Change font family for resource and URL headings */
+  font-size: 1.2rem; /* Adjust font size */
+  margin-top: 1rem;
+  padding-bottom: 0.5rem; /* Space below text */
+  border-bottom: 2px solid #333; /* Add bottom border */
+  display: inline-block;
+}
